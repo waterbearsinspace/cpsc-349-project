@@ -2,11 +2,16 @@ function NavBar() {
 
   return (
     <nav className="nav-bar">
-    <p>Home</p>
-    <p>About</p>
-    <p>Projects</p>
-    <p>Skills</p>
-    <p>Contact</p>
+      <div>
+        <p>Nick Viste</p>
+      </div>
+
+      <div>
+        <p>Projects</p>
+        <p>Skills</p>
+        <p>About</p>
+        <p>Contact</p>
+      </div>
     </nav>
   )
 }

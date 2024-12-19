@@ -10,8 +10,9 @@ html, body, p, h1, h2, h3 {
   min-height: 5svh;
   border: 1px solid black;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  padding-inline: 2.5em;
 }
 
 .section {
