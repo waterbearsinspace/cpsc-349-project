@@ -2,7 +2,11 @@ function NavBar() {
 
   return (
     <nav className="nav-bar">
-      <p>Nav Bar Section.</p>
+    <p>Home</p>
+    <p>About</p>
+    <p>Projects</p>
+    <p>Skills</p>
+    <p>Contact</p>
     </nav>
   )
 }

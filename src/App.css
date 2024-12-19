@@ -1,3 +1,4 @@
+
 html, body, p, h1, h2, h3 {
   margin: 0;
 }
@@ -7,15 +8,6 @@ html, body, p, h1, h2, h3 {
 .nav-bar {
   min-height: 5vh;
   min-height: 5svh;
-  border: 1px solid black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer {
-  min-height: 30vh;
-  min-height: 30svh;
   border: 1px solid black;
   display: flex;
   justify-content: center;
@@ -37,9 +29,18 @@ html, body, p, h1, h2, h3 {
   min-height: 95svh;
 }
 
-.section.contact {
-  min-height: 70vh;
-  min-height: 70svh;
+.section:last-of-type {
+  min-height: 80vh;
+  min-height: 80svh;
+}
+
+.footer {
+  min-height: 20vh;
+  min-height: 20svh;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .split {
