@@ -56,8 +56,20 @@ html, body, p, h1, h2, h3 {
   }
 }
 
+
+
 /* Typography */
 
 .text {
   max-width: 60ch;
+}
+
+textarea {
+  min-width: 50ch;
+  max-width: 50ch;
+
+  height: 35ch;
+
+  min-height: 15ch;
+  max-height: 75ch;
 }
