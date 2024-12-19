@@ -1,2 +1,35 @@
-#root {
+html, body, p, h1, h2, h3 {
+  margin: 0;
+}
+
+.nav-bar {
+  min-height: 5vh;
+  min-height: 5svh;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  min-height: 30vh;
+  min-height: 30svh;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section {
+  min-height: 100vh;
+  min-height: 100svh;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section.contact {
+  min-height: 70vh;
+  min-height: 70svh;
 }
