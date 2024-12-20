@@ -3,7 +3,7 @@ function Footer() {
   return (
     <footer className="footer">
       <div>
-        <h1>Menu</h1>
+        <h3>Menu</h3>
 
         <div>
           <p>Home</p>
@@ -15,7 +15,7 @@ function Footer() {
       </div>
 
       <div>
-        <h1>Socials</h1>
+        <h3>Socials</h3>
 
         <div>
           <p>Github: waterbearsinspace</p>

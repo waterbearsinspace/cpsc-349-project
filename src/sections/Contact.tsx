@@ -1,7 +1,7 @@
 function Contact() {
 
   return (
-    <section className="section contact">
+    <section className="contact-section section">
       <h1>Contact</h1>
       <form action="">
         <label htmlFor="email">

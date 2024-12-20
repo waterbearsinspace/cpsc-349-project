@@ -1,6 +1,8 @@
 
 html, body, p, h1, h2, h3 {
   margin: 0;
+  font-family: "Mulish", serif;
+  font-optical-sizing: auto;
 }
 
 /* Layout */
@@ -43,18 +45,137 @@ html, body, p, h1, h2, h3 {
   align-items: center;
 }
 
-.split {
+/* Typography */
+
+textarea {
+  min-width: 50ch;
+  max-width: 50ch;
+
+  height: 35ch;
+
+  min-height: 15ch;
+  max-height: 75ch;
+}
+
+h1 {
+  font-size: 3.815rem;
+  font-weight: 700;
+  font-style: normal;
+}
+
+h2 {
+  font-size: 3.052rem;
+}
+
+h3 {
+  font-size: 2.441rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+/* Colors */
+.hero-section, .projects-section, .contact-section {
+  background-color: black;
+  color: white;
+}
+
+/* Hero */
+.hero {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 2.5em;
   padding: 1.5rem;
+  width: 70%;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.hero-header {
+  font-size: 2.441rem;
+  margin-bottom: 0.25em;
+}
+
+.hero-tagline {
+  font-size: 1rem;
+  margin-bottom: 3em;
+}
+
+.hero-lg {
+  flex-grow: 4;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-image {
+  object-fit: cover;
+  overflow: hidden;
+  max-width: 70%;
+  height: auto;
+}
+
+.hero > * {
+  height: 100%;
+  width: 100%;
 }
 
 @media (min-width: 600px) {
-  .split {
+  .hero {
     flex-direction: row;
   }
+
+  .hero-header {
+    font-size: 3.815em;
+  }
+
+  .hero-text {
+    max-width: 60ch;
+    text-align: center;
+  }
+
+  .hero-lg {
+    flex-grow: 5;
+    width: auto;
+  }
+
+  .hero-sm {
+    flex-grow: 1;
+    width: auto;
+  }
+
+  .hero-image {
+    max-width: 400px;
+  }
+
+  .hero-tagline {
+    margin-top: 2em;
+    font-size: 2.441rem;
+  }
+}
+
+/* About */
+.about-wrapper {
+  display: flex;
+  width: 50%;
+}
+
+.about-lg {
+  flex-grow: 7;
+  justify-items: end;
+}
+
+.about.text {
+  text-align: justify;
+  max-width: 75ch;
+}
+
+.about-sm {
+  flex-grow: 1;
+  text-align: start;
 }
 
 /* Projects */
@@ -79,18 +200,36 @@ html, body, p, h1, h2, h3 {
   object-fit: cover;
 }
 
-/* Typography */
-
-.text {
-  max-width: 60ch;
+/* Skills */
+.skills-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
 }
 
-textarea {
-  min-width: 50ch;
-  max-width: 50ch;
+.skill-container {
+  display: flex;
+  gap: 5em;
+  flex-wrap: wrap;
+  margin-bottom: 4em;
+}
 
-  height: 35ch;
+.skill-card {
+  display: flex;
+  align-items: center;
+  height: 5em;
+}
 
-  min-height: 15ch;
-  max-height: 75ch;
+.skills-lg {
+  flex-grow: 4;
+  text-align: start;
+}
+
+.skills-sm {
+  flex-grow: 1;
+  text-align: end;
+}
+
+i {
+  font-size: 5em;
 }

@@ -5,14 +5,14 @@ import Checklist from "../assets/harkins checklist.png"
 function Projects() {
 
   return (
-    <section className="section" id="projects">
+    <section className="projects-section section" id="projects">
       <div>
         <h1>Projects</h1>
       </div>
 
-      <div className="split projects-container">
+      <div className="projects-container">
         <div className="text project-card">
-          <h2>CPSC 332 Database Project</h2>
+          <h2>CPSC 332 Project</h2>
           <img className="project-img" src={CPSC332}/>
           <div className="project-text">
             <p>For a File Structure and Database Class at CSUF I worked on a web application to view a collection of board games. </p>
