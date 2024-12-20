@@ -1,7 +1,7 @@
 function Contact() {
 
   return (
-    <section className="contact-section section">
+    <section className="contact-section section" id="contact">
       <h1>Contact</h1>
       <form action="">
         <label htmlFor="email">
@@ -13,6 +13,8 @@ function Contact() {
           <p>Message</p>
         </label>
         <textarea id="message" rows={25} cols={50}/>
+
+        <button>Send</button>
       </form>
     </section>
   )

@@ -6,17 +6,6 @@ html, body, p, h1, h2, h3 {
 }
 
 /* Layout */
-
-.nav-bar {
-  min-height: 5vh;
-  min-height: 5svh;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-inline: 2.5em;
-  border-bottom: 1px solid black;
-}
-
 .section {
   min-height: 100vh;
   min-height: 100svh;
@@ -81,6 +70,44 @@ p {
   color: white;
 }
 
+/* Nav Bar */
+.nav-bar {
+  min-height: 5vh;
+  min-height: 5svh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 2.5em;
+  border-bottom: 1px solid black;
+  background-color: white;
+  position: sticky;
+  top: 0px;
+}
+
+.nav-bar-links {
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+  width: 100%;
+}
+
+.nav-bar-links > * > * + * {
+  margin-left: 2em;
+}
+
+.nav-bar-links>div>a, .nav-bar-links>div>a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  .nav-bar {
+    flex-direction: column;
+    width: 100%;
+    font-size: .5rem;
+  }
+}
+
 /* Hero */
 .hero {
   display: flex;
@@ -90,7 +117,6 @@ p {
   padding: 1.5rem;
   width: 70%;
   text-align: center;
-  border: 1px solid black;
 }
 
 .hero-header {
@@ -164,8 +190,8 @@ p {
 }
 
 .about-lg {
-  flex-grow: 7;
-  justify-items: end;
+  flex-grow: 1;
+  justify-items: start;
 }
 
 .about.text {
@@ -176,6 +202,18 @@ p {
 .about-sm {
   flex-grow: 1;
   text-align: start;
+}
+
+@media (max-width: 600px) {
+  .about-wrapper {
+    flex-direction: column;
+    width: 80%;
+    padding: 1em;
+  }
+
+  h1 {
+    font-size: 2.441rem;
+  }
 }
 
 /* Projects */
@@ -205,6 +243,8 @@ p {
   display: flex;
   justify-content: space-between;
   width: 50%;
+  padding-top: 5vh;
+  padding-top: 5svh;
 }
 
 .skill-container {
@@ -216,8 +256,11 @@ p {
 
 .skill-card {
   display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  justify-content: center;
   align-items: center;
-  height: 5em;
+  height: 7em;
 }
 
 .skills-lg {
@@ -232,4 +275,37 @@ p {
 
 i {
   font-size: 5em;
+}
+
+/* Contact */
+.contact-section > * {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding-inline: 1em;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  align-items: stretch;
+  justify-content: start;
+  padding-inline: 2em;
+  gap: 2em;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.footer-links > * > * + * {
+  margin-left: 2em;
+}
+
+.footer-links>a, .footer-links>a:visited {
+  color: black;
+  text-decoration: none;
 }

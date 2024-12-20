@@ -5,13 +5,12 @@ function Footer() {
       <div>
         <h3>Menu</h3>
 
-        <div>
-          <p>Home</p>
-          <p>About</p>
-          <p>Projects</p>
-          <p>Skills</p>
-          <p>Contact</p>
-        </div>
+        <div className="footer-links">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+      </div>
       </div>
 
       <div>
