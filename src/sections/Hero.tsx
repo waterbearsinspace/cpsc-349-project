@@ -9,7 +9,7 @@ function Hero() {
           <div className="text">
             <h1>Hello. My name is Nick Viste.</h1>
 
-            <p>I am a student at CSUF. I am currently finishing my degree in computer science and working to improve both my front end and back end skills. I know enough to know that I know very little and because of this, I am very excited about how much there is to learn and explore.</p>
+            <p>I am a student at CSUF. I am currently finishing my degree in computer science and working to improve both my front end and back end skills. I know enough to know that I know very little and because of this, I am very excited about how much there is to discover and explore.</p>
           </div>
         </div>
 
