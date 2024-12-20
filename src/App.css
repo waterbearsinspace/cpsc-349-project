@@ -25,15 +25,6 @@ html, body, p, h1, h2, h3 {
   min-height: 80svh;
 }
 
-.footer {
-  min-height: 20vh;
-  min-height: 20svh;
-  border-top: 1px solid black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 /* Typography */
 
 textarea {
@@ -204,6 +195,10 @@ p {
   text-align: start;
 }
 
+.about-resume {
+  margin-top: 2em
+}
+
 @media (max-width: 600px) {
   .about-wrapper {
     flex-direction: column;
@@ -287,11 +282,14 @@ i {
 
 /* Footer */
 .footer {
-  display: flex;
   align-items: stretch;
-  justify-content: start;
-  padding-inline: 2em;
+  border-top: 1px solid black;
+  display: flex;
   gap: 2em;
+  justify-content: start;
+  min-height: auto;
+  min-height: auto;
+  padding: 2em;
 }
 
 .footer-links {
