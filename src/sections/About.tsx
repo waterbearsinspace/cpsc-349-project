@@ -1,3 +1,5 @@
+import Resume from "../assets/Nicolas Viste Resume.pdf"
+
 function About() {
 
   return (
@@ -26,6 +28,10 @@ function About() {
           <div className="text">
             <h2>Interests</h2>
             <p>I have a small variety of hobbies including playing board games, listening to music, and watching movies. A couple favorites of each include Spirit Island and Aeon's End, Billlie and Camoufly, and River and One Cut of the Dead.</p>
+          </div>
+
+          <div>
+            <a href={Resume} target="_blank">Resume</a>
           </div>
         </div>
       </div>

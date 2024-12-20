@@ -14,7 +14,7 @@ function Hero() {
         </div>
 
         <div className="split-sm">
-          <img src={Avatar} height="200 rem"></img>
+          <img src={Avatar} height="200px"></img>
         </div>
       </div>
 

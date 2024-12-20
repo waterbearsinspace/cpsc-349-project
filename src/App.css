@@ -8,17 +8,16 @@ html, body, p, h1, h2, h3 {
 .nav-bar {
   min-height: 5vh;
   min-height: 5svh;
-  border: 1px solid black;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-inline: 2.5em;
+  border-bottom: 1px solid black;
 }
 
 .section {
   min-height: 100vh;
   min-height: 100svh;
-  border: 1px solid black;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -38,7 +37,7 @@ html, body, p, h1, h2, h3 {
 .footer {
   min-height: 20vh;
   min-height: 20svh;
-  border: 1px solid black;
+  border-top: 1px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -52,13 +51,33 @@ html, body, p, h1, h2, h3 {
   padding: 1.5rem;
 }
 
-@media (min-width: 40em) {
+@media (min-width: 600px) {
   .split {
     flex-direction: row;
   }
 }
 
+/* Projects */
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  align-self: stretch;
+  gap: 1.5em;
+  padding-inline: 2.5em;
+}
 
+.project-card {
+  padding: 20px;
+  align-self: stretch;
+}
+
+.project-text {
+}
+
+.project-img {
+  width: 100%;
+  object-fit: cover;
+}
 
 /* Typography */
 
