@@ -1,5 +1,5 @@
 # Requirements
-Ensure that `npm` is installed.
+Ensure that `npm` is installed and the repository is cloned.
 
 # How to Run Locally
 1. Install dependencies using `npm install`.
